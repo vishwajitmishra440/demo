@@ -1,0 +1,39 @@
+package Array2D;
+import java.util.Scanner;
+
+
+public class Basic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // int[][] = {{1,2,3,4},{4,5,6,7},{0,8,7,6}};
+        //  int[][] arr = {
+        //     {10, 20, 30},
+        //     {40, 50, 60},
+        //     {70, 80, 90}
+        // };
+        
+        System.out.println("entr row: ");
+        int row = sc.nextInt();
+        System.out.println("enter col: ");
+        int col =sc.nextInt();
+
+        int[][] arr = new int[row][col];
+
+        System.out.println(" element: ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+    
+}
